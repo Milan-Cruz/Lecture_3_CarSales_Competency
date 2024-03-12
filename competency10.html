@@ -1,0 +1,117 @@
+<!--------f-----------
+
+	Do not alter this comment block. 
+	Only fill out the information below.
+	
+    Competency 10
+    Name: Milan Cruz
+    Date: 12-03-2024
+    Description:
+		Improving its appearance
+	
+--------------------->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Competency 10</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<!-- Create your form elements inside the form tag -->
+	<form id="orderplacement" action="newvehicle.php" method="post">
+		<!-- the action attribute specifies to which URL the form data will be sent when the
+			form is submitted, fater that step onwards the "newvehicle.php" script will handle 
+			further actions -->
+
+		<fieldset>
+			<legend>
+				Your Desired Vehicle
+			</legend>
+			<!-- all labels and inputs are connected through for and id attributes -->
+			<fieldset>
+				<legend>
+					Contact and Payment
+				</legend>
+				<ul>
+					<li>
+						<label for="login">Login</label>
+						<input id="login" name="login" type="text" placeholder="John Doe" autofocus>
+						<!-- input 1 with placeholder -->
+					</li>
+					<li>
+						<label for="phone">Phone</label>
+						<input id="phone" name="phone" type="tel" placeholder="(000) 999-4545">
+						<!-- input 2 with placeholder -->
+					</li>
+					<li>
+						<fieldset>
+							<legend>
+								Payment Choice
+							</legend>
+							<ol>
+								<li>
+									<!-- input 3 -->
+									<input id="lease" name="paytype" type="radio">
+									<label for="lease">Lease</label>
+								</li>
+								<li>
+									<!-- input 4 -->
+									<input id="finance" name="paytype" type="radio">
+									<label for="finance">Finance</label>
+								</li>
+								<li>
+									<!-- input 5 -->
+									<input id="cash" name="paytype" type="radio">
+									<label for="cash">Cash</label>
+								</li>
+							</ol>
+						</fieldset>
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset id="vehicle-field">
+				<!-- requested text area -->
+				<legend>
+					Vehicle Choice
+				</legend>
+				<ul>
+					<li>
+						<!-- the select -->
+						<label for="vehicle">Vehicle</label>
+						<select name="vehicle" id="vehicle">
+							<option value="priusprime" selected>Prius Prime</option>
+							<option value="grcorolla">GR Corolla</option>
+							<option value="crown">Crown</option>
+							<option value="sienna">Sienna</option>
+							<option value="tundra">Tundra</option>
+						</select>
+					</li>
+					<!-- <br> removed for Joshi's homework -->
+					<li>
+						<!-- the textarea -->
+						<label for="accessories">Accessories</label><br>
+						<textarea name="accessories" id="accessories" rows="7" cols="35"
+							placeholder="Block heater, dash camera, body side moulding..."></textarea>
+					</li>
+				</ul>
+				<div>
+					<img class="suv-img" src="Toyota_Highlander.png" alt="Toyota Highlander SUV">
+				</div>
+			</fieldset>
+		</fieldset>
+
+		<!-- id added for Joshi's homework -->
+		<fieldset id="buttons-field">
+			<legend>Checkout</legend>
+			<!-- 3 requested buttons -->
+			<button type="submit">Place Order!</button>
+			<button type="button">Change Vehicle</button>
+			<button type="reset">Reset Build</button>
+		</fieldset>
+
+	</form>
+</body>
+
+</html>

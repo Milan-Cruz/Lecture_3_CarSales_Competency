@@ -1,0 +1,76 @@
+:root {
+    --primary-color: #211C6A;
+    /* --secondary-color: #59B4C3; */
+    --secondary-color: #A5D7DF;
+    --tertiary-color: #847577;
+    --fourth-color: #F9FBDA;
+    /* --fourth-color: #EFF396; */
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+input,
+textarea,
+select {
+    background-color: var(--fourth-color);
+    border-radius: 4px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+fieldset {
+    border-radius: 5px;
+}
+
+button {
+    background-color: var(--tertiary-color);
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+}
+
+.suv-img {
+    max-width: 300px;
+    border: 2px solid var(--fourth-color);
+    border-radius: 5px;
+}
+
+#orderplacement {
+    width: 720px;
+    margin: 15px auto 15px;
+}
+
+#orderplacement * {
+    margin: 6px 5px 6px;
+}
+
+#buttons-field {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 14px;
+}
+
+#vehicle-field {
+    display: flex;
+    justify-content: space-around;
+}
